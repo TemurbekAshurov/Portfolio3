@@ -1,0 +1,1560 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+
+@import url("   ");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+
+
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+section {
+  width: 100%;
+  min-height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+body {
+  background-color: black;
+}
+
+h1,
+h2 {
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+}
+
+/* классы для всех */
+
+.orange-text {
+  color: orange;
+  background: linear-gradient(90deg, #fa709a 0%, #fee140 100%),
+    linear-gradient(0deg, #ffffff, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: fixed;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.96);
+}
+
+.header-wrapper {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 120px;
+}
+
+nav {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+.nac {
+  background-color: #000000;
+  font-size: 25px;
+  color: #ffffff;
+}
+
+nav a {
+  font-size: 20px;
+}
+
+.header-btn-wrapper {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.header-btn-wrapper button {
+  padding: 10px 35px;
+  background-color: #925ff0;
+  font-size: 17px;
+  border-radius: 5px;
+}
+
+.burger {
+  width: 40px;
+  height: 30px;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+}
+
+.burger span {
+  width: 100%;
+  height: 2px;
+  background-color: white;
+}
+
+.hero-wrapper {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  /* margin-top: 200px; */
+}
+
+.hero-text-wrapper {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hero-text-wrapper h1 {
+  line-height: 230px;
+  font-size: 230px;
+  text-align: center;
+}
+
+.hero-text-wrapper h2 {
+  font-size: 130px;
+  text-align: center;
+}
+
+.hero-icon-wrapper {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-wrapper button {
+  width: 80%;
+  padding: 20px 0;
+  background: #292929;
+  font-size: 18px;
+  color: white;
+}
+
+.cash-wrapper {
+  border: 1px solid #646464;
+  border-radius: 29px;
+
+  width: 80%;
+  min-height: 500px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.cash h1 {
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 150%;
+  color: #c8fec7;
+  font-family: "Anton";
+  font-style: normal;
+}
+
+.cash p {
+  width: 70%;
+  font-weight: 900;
+  font-size: 25px;
+  font-weight: 700;
+  /* font-family: 'Gotham'; */
+  font-style: normal;
+  color: #c8fec7;
+}
+
+.portfolio-wrapper {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.h1-portfolio-title h1 {
+  font-family: "Anton";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 100%;
+  line-height: 250%;
+}
+
+/* внутри .port-wrapp => h1 */
+
+/* внутри .port-wrapp => .item-wrapp */
+.item-wrapp {
+  width: 100%;
+  flex-direction: column;
+
+  display: grid;
+  grid-template-columns: repeat(2, 700px);
+  grid-auto-rows: minmax(650px, auto);
+  justify-content: space-between;
+  gap: 50px;
+}
+
+/* внутри .item-wrapp => .item */
+.item {
+  /* ширина вид цвет */
+  
+  border-radius: 3%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+/* внутри .item => .item-img */
+.item-img {
+ 
+  width: 695px;
+  height: 395px;
+  background-image: linear-gradient(
+    to left bottom,
+    rgb(251, 221, 226),
+    rgb(241, 163, 142),
+    rgb(49, 29, 202),
+    rgb(233, 69, 69),
+    rgb(238, 180, 238),
+    white
+  );
+}
+
+/* внутри .item => .item-wrapp */
+.desc-wrapp {
+  width: 95%;
+  display: flex;
+  border-radius: 3%;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+/* внутри .item-wrapp => h3 */
+.desc-wrapp h3 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+/* внутри .item-wrapp => .status-wrapp */
+.status-wrapp {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* внутри .status-wrapp => .status */
+.status {
+  padding: 5px 20px;
+  background-color: #e9dffc;
+  color: #784dc7;
+  width: 627px;
+  text-align:center ;
+
+  /* border: 1px solid #784dc7; */
+
+  border-radius: 20px;
+}
+
+/* внутри .desc-wrapp => button */
+.desc-wrapp button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: #121212;
+  font-size: 17px;
+}
+
+.title-skills {
+  font-family: "Anton";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 150%;
+  line-height: 250%;
+  display: flex;
+
+  width: 80%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+
+  gap: 50px;
+}
+
+.skill-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+
+  gap: 50px;
+}
+
+.skill-item-wrapper {
+  width: 82%;
+  padding: 40px;
+  border: 2px solid #737373;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.persent-block {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(.//18days-img/Ellipse\ 7.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.skill-wrapper-text {
+  width: 80%;
+}
+
+.skill-wrapper-text h1 {
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+.skill-wrapper-text p {
+  margin-top: 40px;
+}
+
+.wrapper-guard {
+  width: 100%;
+
+  padding: 100px;
+
+  background-image: url(./18days-img/unsplash_wHJ5L9KGTl4.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.g-space-wrapper {
+  width: 70%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 100px;
+}
+
+.g-h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.g-space-icon {
+  width: 100px;
+  height: 100px;
+  background-image: url(./18days-img/Shield\ 1\ \(1\).svg);
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-wrap-guard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.about-wrapper {
+
+  width: 80%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.first-about-wrapper img {
+  width: 50%;
+}
+
+.first-about-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text-content-about {
+  width: 50%;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.title-about-wrapper img {
+  width: 20%;
+}
+
+.title-about-wrapper h1 {
+  font-family: "Anton";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 100%;
+}
+
+.title-about-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.span1 {
+  background: linear-gradient(90deg, #fa709a 0%, #fee140 100%),
+    linear-gradient(0deg, #ffffff, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about-wrapper p {
+  width: 80%;
+  font-family: "Gotham";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 100%;
+}
+
+.second-about-wrapper img {
+  width: 50%;
+}
+
+.second-about-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.second-about-wrapper p {
+  width: 50%;
+  font-family: "Gotham";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 100%;
+}
+.span2 {
+  background: linear-gradient(90deg, #84fab0 0%, #8fd3f4 100%),
+    linear-gradient(0deg, #ffffff, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.third-about-wrapper img {
+  width: 50%;
+}
+.third-about-wrapper {
+  
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: red; */
+  flex-direction: row-reverse;
+}
+
+.third-about-wrapper p {
+  width: 50%;
+  font-family: "Gotham";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 100%;
+}
+.span3 {
+  background: linear-gradient(90deg, #e0c3fc 0%, #8ec5fc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.red-span {
+  color: red;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: #292929;
+  min-height: 400px;
+  margin-top: 400PX;
+}
+
+.footer-wrapper {
+  border-bottom: 2px solid rgb(152, 150, 148);
+  display: flex;
+  width: 100%;
+  min-height: 350px ;
+  background-color: #292929;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+
+
+
+
+
+.girl-wrapper {
+  position: absolute;
+
+background-color: #A87FF3;
+
+  border: 1px solid black;
+  border-radius: 29px;
+
+
+
+
+
+  width: 80%;
+  height: 250px;
+  background-color: #925ff0;
+  position: absolute;
+  top: -30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+
+}
+
+.girl-wrapper img {
+  position: absolute;
+  top: -70%;
+  left: 100px;
+  width: 300px;
+  
+
+
+}
+.girl-wrapper p {
+width: 20%;
+font-family: 'Gotham';
+font-style: normal;
+font-weight: 700;
+font-size: 22px;
+line-height: 100%;
+}
+
+
+
+
+
+.sama-girl {
+  position: absolute;
+  bottom:-7800px;
+  left: 200px ;
+
+}
+
+
+
+.nav-footer {
+
+  gap: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+
+
+.trait-footer img {
+  width: 300px;
+  margin-top: 100px;
+}
+
+
+
+.nav-footer a {
+  font-family: 'Gotham';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 100%;
+
+}
+
+
+@media screen and (max-width: 1400px){
+
+
+  .header-wrapper {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+  }
+
+
+  section {
+    width: 100%;
+    min-height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+  }
+
+
+
+
+
+
+  .hero-text-wrapper {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+  }
+  
+  .hero-text-wrapper h1 {
+    line-height: 150px;
+    font-size: 150px;
+    text-align: center;
+  }
+  
+  .hero-text-wrapper h2 {
+    font-size: 90px;
+    text-align: center;
+  }
+
+
+  
+.cash-wrapper {
+  border: 1px solid #646464;
+  border-radius: 29px;
+
+  width: 70%;
+  min-height: 300px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.cash h1 {
+  font-weight: 250;
+  font-size: 50px;
+  line-height: 100%;
+  color: #c8fec7;
+  font-family: "Anton";
+  font-style: normal;
+}
+
+.cash p {
+  width: 70%;
+  font-weight: 900;
+  font-size: 20px;
+  font-weight: 600;
+  /* font-family: 'Gotham'; */
+  font-style: normal;
+  color: #c8fec7;
+}
+}
+
+
+
+@media screen and (max-width: 900px){
+  nav {
+    display: none;
+  }
+
+  .header-btn-wrapper {
+    display: none;
+  }
+
+  .burger {
+    display: flex;
+  }
+}
+
+
+
+
+@media screen and (max-width: 1700px){
+
+/* грид колум кад */
+
+.portfolio-wrapper {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.h1-portfolio-title h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Anton";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 100%;
+  line-height: 250%;
+}
+
+/* внутри .port-wrapp => h1 */
+
+/* внутри .port-wrapp => .item-wrapp */
+.item-wrapp {
+  width: 100%;
+  flex-direction: column;
+
+  display: grid;
+  grid-template-columns: repeat(1, 1330px);
+  grid-auto-rows: minmax(650px, auto);
+  justify-content: space-between;
+  gap: 50px;
+}
+
+/* внутри .item-wrapp => .item */
+.item {
+  /* ширина вид цвет */
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+/* внутри .item => .item-img */
+.item-img {
+  border-radius: 3%;
+  width: 95%;
+  height: 60%;
+  background-image: linear-gradient(
+    to left bottom,
+    rgb(251, 221, 226),
+    rgb(241, 163, 142),
+    rgb(49, 29, 202),
+    rgb(233, 69, 69),
+    rgb(238, 180, 238),
+    white
+  );
+}
+
+/* внутри .item => .item-wrapp */
+.desc-wrapp {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+/* внутри .item-wrapp => h3 */
+.desc-wrapp h3 {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+/* внутри .item-wrapp => .status-wrapp */
+.status-wrapp {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* внутри .status-wrapp => .status */
+.status {
+  padding: 10px 25px;
+  background-color: #e9dffc;
+  color: #784dc7;
+
+  border: 1px solid #784dc7;
+
+  border-radius: 20px;
+}
+
+/* внутри .desc-wrapp => button */
+.desc-wrapp button {
+  width: 100%;
+  padding: 20px;
+  border: none;
+  background-color: #121212;
+  font-size: 25px;
+}
+
+
+
+
+.title-skills {
+  font-family: "Anton";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 150%;
+  line-height: 250%;
+  display: flex;
+
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 50px;
+}
+
+.skill-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+
+  gap: 50px;
+}
+
+.skill-item-wrapper {
+  width: 82%;
+  padding: 40px;
+  border: 2px solid #737373;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.persent-block {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(.//18days-img/Ellipse\ 7.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.skill-wrapper-text {
+  width: 80%;
+}
+
+.skill-wrapper-text h1 {
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+.skill-wrapper-text p {
+  font-size: 25px;
+  
+  margin-top: 40px;
+}
+}
+
+
+
+
+
+
+
+@media screen and (max-width:1530px){
+
+  /* грид колум кад */
+  
+  .portfolio-wrapper {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .h1-portfolio-title h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Anton";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 100%;
+    line-height: 250%;
+  }
+  
+  /* внутри .port-wrapp => h1 */
+  
+  /* внутри .port-wrapp => .item-wrapp */
+  .item-wrapp {
+    width: 100%;
+    flex-direction: column;
+  
+    display: grid;
+    grid-template-columns: repeat(1, 1030px);
+    grid-auto-rows: minmax(650px, auto);
+    justify-content: space-between;
+    gap: 50px;
+  }
+  
+  /* внутри .item-wrapp => .item */
+  .item {
+    /* ширина вид цвет */
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  /* внутри .item => .item-img */
+  .item-img {
+    border-radius: 3%;
+    width: 95%;
+    height: 60%;
+    background-image: linear-gradient(
+      to left bottom,
+      rgb(251, 221, 226),
+      rgb(241, 163, 142),
+      rgb(49, 29, 202),
+      rgb(233, 69, 69),
+      rgb(238, 180, 238),
+      white
+    );
+  }
+  
+  /* внутри .item => .item-wrapp */
+  .desc-wrapp {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  
+  /* внутри .item-wrapp => h3 */
+  .desc-wrapp h3 {
+    font-size: 40px;
+    font-weight: 600;
+  }
+  
+  /* внутри .item-wrapp => .status-wrapp */
+  .status-wrapp {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  /* внутри .status-wrapp => .status */
+  .status {
+    padding: 10px 25px;
+    background-color: #e9dffc;
+    color: #784dc7;
+  
+    border: 1px solid #784dc7;
+  
+    border-radius: 20px;
+  }
+  
+  /* внутри .desc-wrapp => button */
+  .desc-wrapp button {
+    width: 100%;
+    padding: 20px;
+    border: none;
+    background-color: #121212;
+    font-size: 25px;
+  }
+  
+  
+  
+  
+  .title-skills {
+    font-family: "Anton";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 150%;
+    line-height: 250%;
+    display: flex;
+  
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    gap: 50px;
+  }
+  
+  .skill-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+  
+    gap: 50px;
+  }
+  
+  .skill-item-wrapper {
+    width: 82%;
+    padding: 40px;
+    border: 2px solid #737373;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .persent-block {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(.//18days-img/Ellipse\ 7.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .skill-wrapper-text {
+    width: 80%;
+  }
+  
+  .skill-wrapper-text h1 {
+    font-size: 40px;
+    font-weight: bolder;
+  }
+  
+  .skill-wrapper-text p {
+    font-size: 25px;
+    
+    margin-top: 40px;
+  }
+  }
+
+
+
+  
+
+
+
+
+
+  @media screen and (max-width:1159px){
+
+    /* грид колум кад */
+    
+    .portfolio-wrapper {
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .h1-portfolio-title h1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: "Anton";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 64px;
+      line-height: 100%;
+      line-height: 250%;
+    }
+    
+    /* внутри .port-wrapp => h1 */
+    
+    /* внутри .port-wrapp => .item-wrapp */
+    .item-wrapp {
+      width: 100%;
+      flex-direction: column;
+    
+      display: grid;
+      grid-template-columns: repeat(1, 970px);
+      grid-auto-rows: minmax(650px, auto);
+      justify-content: space-between;
+      gap: 50px;
+    }
+    
+    /* внутри .item-wrapp => .item */
+    .item {
+      /* ширина вид цвет */
+      border: 1px solid lightgray;
+      border-radius: 10px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+    
+    /* внутри .item => .item-img */
+    .item-img {
+      border-radius: 3%;
+      width: 95%;
+      height: 60%;
+      background-image: linear-gradient(
+        to left bottom,
+        rgb(251, 221, 226),
+        rgb(241, 163, 142),
+        rgb(49, 29, 202),
+        rgb(233, 69, 69),
+        rgb(238, 180, 238),
+        white
+      );
+    }
+    
+    /* внутри .item => .item-wrapp */
+    .desc-wrapp {
+      width: 95%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+    }
+    
+    /* внутри .item-wrapp => h3 */
+    .desc-wrapp h3 {
+      font-size: 40px;
+      font-weight: 600;
+    }
+    
+    /* внутри .item-wrapp => .status-wrapp */
+    .status-wrapp {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    
+    /* внутри .status-wrapp => .status */
+    .status {
+      padding: 10px 25px;
+      background-color: #e9dffc;
+      color: #784dc7;
+    
+      border: 1px solid #784dc7;
+    
+      border-radius: 20px;
+    }
+    
+    /* внутри .desc-wrapp => button */
+    .desc-wrapp button {
+      width: 100%;
+      padding: 20px;
+      border: none;
+      background-color: #121212;
+      font-size: 25px;
+    }
+    
+    
+    
+    
+    .title-skills {
+      font-family: "Anton";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 64px;
+      line-height: 150%;
+      line-height: 250%;
+      display: flex;
+    
+      width: 80%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    
+      gap: 50px;
+    }
+    
+    .skill-wrapper {
+      width: 100%;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      flex-direction: column;
+    
+      gap: 50px;
+    }
+    
+    .skill-item-wrapper {
+      width: 82%;
+      padding: 40px;
+      border: 2px solid #737373;
+      border-radius: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .persent-block {
+      width: 200px;
+      height: 200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url(.//18days-img/Ellipse\ 7.png);
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      font-size: 35px;
+      font-weight: bold;
+    }
+    
+    .skill-wrapper-text {
+      width: 80%;
+    }
+    
+    .skill-wrapper-text h1 {
+      font-size: 40px;
+      font-weight: bolder;
+    }
+    
+    .skill-wrapper-text p {
+      font-size: 25px;
+      
+      margin-top: 40px;
+    }
+    }
+
+
+
+
+
+    
+
+
+
+
+
+    @media screen and (max-width:1000px){
+
+
+      section {
+        width: 100%;
+        min-height: 20vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+      }
+    
+    
+    
+    
+    
+    
+      .hero-text-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+      }
+      
+      .hero-text-wrapper h1 {
+        line-height: 120px;
+        font-size: 130px;
+        text-align: center;
+      }
+      
+      .hero-text-wrapper h2 {
+        font-size: 80px;
+        text-align: center;
+      }
+    
+    
+      
+    .cash-wrapper {
+      border: 1px solid #646464;
+      border-radius: 29px;
+    
+      width: 90%;
+      min-height: 200px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+    
+    .cash h1 {
+      font-weight: 200;
+      font-size: 40px;
+      line-height: 100%;
+      color: #c8fec7;
+      font-family: "Anton";
+      font-style: normal;
+    }
+    
+    .cash p {
+      width: 70%;
+      font-weight: 800;
+      font-size: 20px;
+      font-weight: 600;
+      /* font-family: 'Gotham'; */
+      font-style: normal;
+      color: #c8fec7;
+    }
+
+      
+
+
+  /* грид колум кад */
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      /* грид колум кад */
+      
+      .portfolio-wrapper {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+      }
+      
+      .h1-portfolio-title h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Anton";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 64px;
+        line-height: 100%;
+        line-height: 250%;
+      }
+      
+      /* внутри .port-wrapp => h1 */
+      
+      /* внутри .port-wrapp => .item-wrapp */
+      .item-wrapp {
+        width: 100%;
+        flex-direction: column;
+      
+        display: grid;
+        grid-template-columns: repeat(1, 870px);
+        grid-auto-rows: minmax(650px, auto);
+        justify-content: space-between;
+        gap: 50px;
+      }
+      
+      /* внутри .item-wrapp => .item */
+      .item {
+        /* ширина вид цвет */
+        border: 1px solid lightgray;
+        border-radius: 10px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+      }
+      
+      /* внутри .item => .item-img */
+      .item-img {
+        border-radius: 3%;
+        width: 95%;
+        height: 60%;
+        background-image: linear-gradient(
+          to left bottom,
+          rgb(251, 221, 226),
+          rgb(241, 163, 142),
+          rgb(49, 29, 202),
+          rgb(233, 69, 69),
+          rgb(238, 180, 238),
+          white
+        );
+      }
+      
+      /* внутри .item => .item-wrapp */
+      .desc-wrapp {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+      }
+      
+      /* внутри .item-wrapp => h3 */
+      .desc-wrapp h3 {
+        font-size: 40px;
+        font-weight: 600;
+      }
+      
+      /* внутри .item-wrapp => .status-wrapp */
+      .status-wrapp {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+      
+      /* внутри .status-wrapp => .status */
+      .status {
+        padding: 10px 25px;
+        background-color: #e9dffc;
+        color: #784dc7;
+      
+        border: 1px solid #784dc7;
+      
+        border-radius: 20px;
+      }
+      
+      /* внутри .desc-wrapp => button */
+      .desc-wrapp button {
+        width: 100%;
+        padding: 20px;
+        border: none;
+        background-color: #121212;
+        font-size: 25px;
+      }
+      
+      
+      
+      
+      .title-skills {
+        font-family: "Anton";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 64px;
+        line-height: 150%;
+        line-height: 250%;
+        display: flex;
+      
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      
+        gap: 50px;
+      }
+      
+      .skill-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-direction: column;
+      
+        gap: 50px;
+      }
+      
+      .skill-item-wrapper {
+        width: 82%;
+        padding: 40px;
+        border: 2px solid #737373;
+        border-radius: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      
+      .persent-block {
+        width: 200px;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(.//18days-img/Ellipse\ 7.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        font-size: 35px;
+        font-weight: bold;
+      }
+      
+      .skill-wrapper-text {
+        width: 80%;
+      }
+      
+      .skill-wrapper-text h1 {
+        font-size: 40px;
+        font-weight: bolder;
+      }
+      
+      .skill-wrapper-text p {
+        font-size: 25px;
+        
+        margin-top: 40px;
+      }
+      }
+  

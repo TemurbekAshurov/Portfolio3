@@ -1,0 +1,384 @@
+
+/* подключение шрифтов */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+
+/* обнуление */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+/* body */
+body {
+    background-color: black;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+
+
+
+
+
+
+
+
+/* header */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    z-index: 10;
+}
+
+/* внутри header => .header-wrapper */
+.header-wrapper {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* внутри .header-wrapper => .logo */
+.logo {
+    font-size: 30px;
+    color: white;
+}
+
+/* внутри .header-wrapper => nav */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* внутри nav => a */
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* внутри .header-wrapper => .btn-wrapper */
+.btn-wrapper {
+    /* border-radius: 10px ; */
+    /* background-color: gray; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* внутри .btn-wrapper => .btn-toggler */
+.btn-toggler {
+    color: white;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    /* background-color: red; */
+    justify-content: center;
+}
+
+.btn {
+
+    border: none;
+    padding: 12px 45px;
+    background-color:  #925FF0;
+    font-size: 18px;
+ 
+}
+
+/* внутри main => .hero */
+.hero {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* внутри .hero => .hero-wrapper */
+.hero-wrapper {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* внутри .hero-wrapper => h1*/
+.hero-wrapper h1 {
+
+    
+    width: 50%;
+    font-size: 150px;
+
+    text-align: center;
+
+     
+
+
+}
+
+
+.hero-wrapper h2 {
+    width: 60%;
+    font-size: 100px;
+    color: linear-gradient(to right, pink, white, purple);;
+    text-align: center;
+
+     
+    color: #174233;
+    background-image: linear-gradient(30.92deg,  #fa7099a8 20%, #fee140d6 50%);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+
+
+
+
+
+
+
+/* внутри .hero-wrapper => .icon-wrapper */
+.icon-wrapper {
+    width: 50%;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* внутри .icon-wrapper => .icon */
+.icon {
+    font-size: 50px;
+    color: white;
+}
+/* внутри .hero-wrapper => button */
+.hero-wrapper button {
+    width: 50%;
+    height: 50px;
+    background-color: #121212;
+    color: white;
+    font-size: 20px;
+}
+/* внутри main => .portfolio */
+.portfolio {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin-top: 100px;
+}
+/* внутри .portfolio => .port-wrapp */
+.port-wrapp {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 40px;
+}
+/* внутри .port-wrapp => h1 */
+.port-wrapp h1 {
+    font-size: 60px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+/* внутри .port-wrapp => .item-wrapp */
+.item-wrapp {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(2, 700px);
+    grid-auto-rows: minmax(650px, auto);
+    justify-content: space-between;
+    margin: 0 auto;
+    grid-gap: 50px;
+    gap: 50 px;
+}
+/* внутри .item-wrapp => .item */
+.item {
+    /* ширина вид цвет */
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+/* внутри .item => .item-img */
+.item-img {
+    border-radius: 3%;
+    width: 95%;
+    height: 60%;
+    background-image: linear-gradient(to left bottom, rgb(251, 221, 226), rgb(241, 163, 142),   rgb(49, 29, 202), rgb(233, 69, 69), rgb(238, 180, 238),   white);
+}
+/* внутри .item => .item-wrapp */
+.desc-wrapp {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+/* внутри .item-wrapp => h3 */
+.desc-wrapp h3 {
+    font-size: 30px;
+    font-weight: 600;
+}
+/* внутри .item-wrapp => .status-wrapp */
+.status-wrapp {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+/* внутри .status-wrapp => .status */
+.status {
+    padding: 5px 20px;
+    background-color: lightpink;
+    border-radius: 20px;
+}
+/* внутри .desc-wrapp => button */
+.desc-wrapp button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #121212;
+    font-size: 17px;
+}
+.bed {
+    display: flex;
+    justify-content: start;
+    align-items: top;
+    font-size: 40px;
+    margin: 0px 200px;
+    font-weight: 600;
+}
+.h1{
+    width:28%;
+    height: 300px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.SKILLS{
+    width: 100%;
+    display: flex;
+    justify-content:start;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    margin-top: 100px;
+    gap: 50px;
+}
+
+
+
+
+.skill-wrapper {
+    width: 82%;
+    padding: 40px;
+    border: 2px solid #737373;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.persent-block {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../Ellipse\ 7.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.skill-wrapper-text {
+    width: 80%;
+}
+
+.skill-wrapper-text h1 {
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.skill-wrapper-text p {
+   margin-top: 40px;
+}
+
+
+
+
+
+.gradiant-space{
+    width: 100%;
+    height: 100vh   ;
+    background-image: url(./unsplash_wHJ5L9KGTl4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.g-space-wrapper{
+    width: 70%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 100px;
+}
+
+
+
+.g-h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.g-space-icon{
+    width: 100px;
+    height: 100px;
+background-image: url(./Shield\ 1.png);
+background-repeat: no-repeat;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+.icon-wrap-guard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
